@@ -1,2 +1,1 @@
-Each of us in China hopes that the motherland will be prosperous and strong,
- and wish the motherland a happy birthday 
+Protecting the environment is the duty of each of our citizens, green water and green mountains are the golden mountains and silver mountains
