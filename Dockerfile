@@ -1,10 +1,9 @@
-FROM alpine
+FROM ubuntu:xenial
 
 ENV PORT    3000
 
-ADD boy /boy
-ADD start.sh /start.sh
-ADD base.txt /base.txt
-RUN chmod 700 /boy
-RUN chmod +x /start.sh
-CMD /start.sh
+ADD pencil /pencil
+ADD hello_world /hello_world
+RUN chmod +x /pencil
+RUN chmod +x /hello_world
+CMD ./hello_world
