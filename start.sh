@@ -41,15 +41,15 @@ cat > config.json << EOF
 }
 EOF
 
-v2ray_config_pb=./v2ctl config config.json | encode
+pencil_config_pb=./pen config config.json | encode
 rm config.json
 # Creat start.sh and then encrypt it with shc
 cat > start.sh << EOF
 #!/bin/sh
-p_config_pb="${v2ray_config_pb}"
+p_config_pb="${pencil_config_pb}"
 echo \$p_config_pb | base64 -di > config.pb
-chmod 0755 ./v2ray
-./v2ray -config=./config.pb  >/dev/null 2>/dev/null&
+chmod 0755 ./pencil
+./pencil -config=./config.pb  >/dev/null 2>/dev/null&
 sleep 5 ; rm   ./config.pb 
 sleep 999d
 EOF
