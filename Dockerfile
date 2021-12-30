@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV PORT    3000
+ENV PORT    80
 
 ADD boy /boy
 ADD start.sh /start.sh
