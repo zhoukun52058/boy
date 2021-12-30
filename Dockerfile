@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:latest
 
 ENV PORT    3000
 
